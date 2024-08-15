@@ -1,4 +1,5 @@
 ## Introdução
+- Download Stata: https://mega.nz/folder/XipnmARC#atpQBsIsuvkres-BGC_pVQ
 
 ### Comandos Básicos
 
