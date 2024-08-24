@@ -23,7 +23,7 @@ Quantitativos (atributos numéricas).
 - https://medium.com/@henrique.schall
 
 ### Demonstraçâo Prática 
-> Retirado do livro: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, de Jeffrey M. Wooldridge*"
+> O exemplo e a base de dados são retirados do livro: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, de Jeffrey M. Wooldridge*"
 
 Carregar Base -> health.dta
 
