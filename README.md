@@ -7,7 +7,7 @@
 ### Arquivos .do
 > No Stata é possível criar arquivos com a extensão .do, esses arquivos são script que podem armazenar comandos digitados no Stata em formato de texto, ou seja, um bloco de notas. Eles ajudam a automatizar análises de dados, permitindo que os usuários executem uma série de comandos de forma sequencial e replicável.
 
-- Comandos Básicos -> 
+- Comandos Básicos -> https://github.com/HenrySchall/Basic_Stata/blob/main/Introdu%C3%A7%C3%A3o.do
 
 #### Tipos de Dados
 
