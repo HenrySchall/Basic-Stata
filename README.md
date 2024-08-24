@@ -52,4 +52,17 @@ sum age if female==0
 ![4](https://github.com/user-attachments/assets/acc6c15e-877e-4133-b4aa-b80cc7e502cb)
 
 > Obtendo o resumo da variável age, condicionado ao fator de não ser mulher
+ 
+```r
+sort female
+by female:sum age
+```
+![5](https://github.com/user-attachments/assets/bc362efb-010d-4667-85c0-be9e96431a4c)
+> Obtendo o resumo da variável female, condicionado ao fator idade (age)
+
+```r
+generate log_age = log(age)
+gen ln_age = ln(age)
+```
+> Gerando o logs da variável age
 
