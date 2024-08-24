@@ -7,7 +7,7 @@
 ### Arquivos .do
 > No Stata é possível criar arquivos com a extensão .do, esses arquivos são script que podem armazenar comandos digitados no Stata em formato de texto, ou seja, um bloco de notas. Eles ajudam a automatizar análises de dados, permitindo que os usuários executem uma série de comandos de forma sequencial e replicável.
 
-- Comandos Básicos -> 
+- Comandos Básicos -> https://github.com/HenrySchall/Basic_Stata/blob/main/Introdu%C3%A7%C3%A3o.do
 
 #### Tipos de Dados
 
@@ -20,10 +20,10 @@ Quantitativos (atributos numéricas).
 - Contínuo: infinitos valores possíveis num intervalo (renda, tempo, altura…).
 
 ### Revisão Estatatística e Econometrica
-- https://medium.com/@henrique.schall
+- https://medium.com/@henrique.schall/os-principais-t%C3%B3picos-para-uma-an%C3%A1lise-econ%C3%B4mica-de-dados-consistente-3ace08e7776f
 
 ### Demonstraçâo Prática 
-> Retirado do livro: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, de Jeffrey M. Wooldridge*"
+> O exemplo e a base de dados são retirados do livro: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, de Jeffrey M. Wooldridge*"
 
 Carregar Base -> health.dta
 
@@ -52,4 +52,42 @@ sum age if female==0
 ![4](https://github.com/user-attachments/assets/acc6c15e-877e-4133-b4aa-b80cc7e502cb)
 
 > Obtendo o resumo da variável age, condicionado ao fator de não ser mulher
+ 
+```r
+sort female
+by female:sum age
+```
+![5](https://github.com/user-attachments/assets/bc362efb-010d-4667-85c0-be9e96431a4c)
+> Obtendo o resumo da variável female, condicionado ao fator idade (age)
+
+```r
+generate log_age = log(age)
+gen ln_age = ln(age)
+```
+> Gerando os logs da variável age
+
+```r
+pwcorr age famsze, star(.1)
+```
+![7](https://github.com/user-attachments/assets/3f2dd87e-5de6-416e-b975-f2cfdcc75f83)
+> Gerando matriz de Correlação.
+  - O comando star(.1) adiciona asteriscos à matriz de correlação para indicar a significância estatística com um nível de significância de 0.1 (10%)
+
+```r
+reg totexp age famsze
+```
+![8](https://github.com/user-attachments/assets/53122f77-059c-4324-9bad-a2da4bd94bd9)
+
+* a ordem é variavel dependente e depois as variaveis explicativas
+* estimação de todos os elementos é sempre usando MQO
+* std. err = erros padrões
+* se o meu modelo passa no teste global eu não preciso fazer os testes individuais
+* leitura coeficiente -> controlado pela variavel idade quando vc aumenta o tamanho da familia em 1 unidade os dados em media os gastos de saude caem 482 dolares
+* R-Squared * 100 = significa que 24% da idade e o do tamanho da familia explicam os gastos totais
+* analisando coeficientes -> age é positivo então o aumento da idade aumenta os gastos da família, já o tamanho da família é negativo, isso significa que familias maiores gastam menos
+
+
+
+
+
 

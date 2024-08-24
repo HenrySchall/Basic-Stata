@@ -29,6 +29,9 @@ summarize ou sum
 // descrever variáveis
 describe 
 
+// criar tabelas de frequência
+tab
+
 // usar para limpar a base anterior e carregar uma nova
 clear
 
