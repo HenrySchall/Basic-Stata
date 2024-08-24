@@ -64,5 +64,30 @@ by female:sum age
 generate log_age = log(age)
 gen ln_age = ln(age)
 ```
-> Gerando o logs da variável age
+> Gerando os logs da variável age
+
+```r
+pwcorr age famsze, star(.1)
+```
+![7](https://github.com/user-attachments/assets/3f2dd87e-5de6-416e-b975-f2cfdcc75f83)
+> Gerando matriz de Correlação.
+  - O comando star(.1) adiciona asteriscos à matriz de correlação para indicar a significância estatística com um nível de significância de 0.1 (10%)
+
+```r
+reg totexp age famsze
+```
+![8](https://github.com/user-attachments/assets/53122f77-059c-4324-9bad-a2da4bd94bd9)
+
+* a ordem é variavel dependente e depois as variaveis explicativas
+* estimação de todos os elementos é sempre usando MQO
+* std. err = erros padrões
+* se o meu modelo passa no teste global eu não preciso fazer os testes individuais
+* leitura coeficiente -> controlado pela variavel idade quando vc aumenta o tamanho da familia em 1 unidade os dados em media os gastos de saude caem 482 dolares
+* R-Squared * 100 = significa que 24% da idade e o do tamanho da familia explicam os gastos totais
+* analisando coeficientes -> age é positivo então o aumento da idade aumenta os gastos da família, já o tamanho da família é negativo, isso significa que familias maiores gastam menos
+
+
+
+
+
 
