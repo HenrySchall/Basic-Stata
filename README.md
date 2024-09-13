@@ -1,7 +1,6 @@
 ## Introdução
 - Download Stata: https://mega.nz/folder/XipnmARC#atpQBsIsuvkres-BGC_pVQ
 - Comunidade: https://www.statalist.org/
-- Leitura: https://medium.com/@henrique.schall
   
 > O Stata é um software de estatística criado pela empresa StataCorp, sediada em College Station, Texas, EUA. Ele foi desenvolvido inicialmente em 1985 por William Gould, o fundador da empresa, como uma ferramenta para a análise de dados estatísticos.
 
