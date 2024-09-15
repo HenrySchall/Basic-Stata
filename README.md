@@ -84,6 +84,8 @@ reg totexp age famsze
 * analisando coeficientes -> age é positivo então o aumento da idade aumenta os gastos da família, já o tamanho da família é negativo, isso significa que familias maiores gastam menos
 
 
+correlcao e o grau de associacao eentre duas variavies
+
 
 
 
